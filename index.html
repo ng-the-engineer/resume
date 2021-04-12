@@ -12,8 +12,9 @@
 			name="description"
 			content="Emulating real sheets of paper in web documents (using HTML and CSS)"
 		/>
-		<title>Sheets of Paper</title>
+		<title>Anthony Ng's CV</title>
 		<link rel="stylesheet" type="text/css" href="css/sheets-of-paper-a4.css" />
+		<link rel="stylesheet" type="text/css" href="css/effect.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -316,11 +317,44 @@
 			<!--Key part-time projects-->
 			<hr />
 			<h4>Key Part-time Projects</h4>
+
+			<!-- Trigger/Open The Modal -->
+			<!--<button id="myBtn">Open Modal</button>-->
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<!-- Modal content -->
+				<div class="modal-content">
+					<span class="close">&times;</span>
+
+					<div class="container">
+						<img
+							src="images\covid_web.png"
+							alt="Avatar"
+							class="image"
+							style="width: 100%"
+						/>
+						<div class="middle">
+							<div class="text">
+								<a
+									href="https://ng-the-engineer.github.io/covid19-flights-app/"
+									target="_blank"
+									>Go to website</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div>
 				<span>AUG 2020 – NOV 2020 / </span>
 				<span class="title-part-time-project">Creator</span>
-				<span class="company-name"> / COVIDCLEAN</span>
-				<span>, LONDON</span>
+				<span class="company-name">
+					/
+					<button id="myBtn" class="btn">COVIDCLEAN</button>
+				</span>
+				<span>, London</span>
 			</div>
 			<div>
 				CovidClean helps travelers to make a better option by accessing Covid-19
@@ -1180,4 +1214,31 @@
 			// window.print();
 		</script>
 	</body>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on the button, open the modal
+		btn.onclick = function () {
+			modal.style.display = "block";
+		};
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function () {
+			modal.style.display = "none";
+		};
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		};
+	</script>
 </html>
