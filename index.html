@@ -15,6 +15,7 @@
 		<title>Anthony Ng's CV</title>
 		<link rel="stylesheet" type="text/css" href="css/sheets-of-paper-a4.css" />
 		<link rel="stylesheet" type="text/css" href="css/effect.css" />
+		<link rel="stylesheet" type="text/css" href="css/video.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -951,6 +952,26 @@
 				<span class="skill-tag">AWS</span>
 			</div>
 
+			<!-- Modal Autobid-->
+			<div id="modalAutobid" class="modal">
+				<div class="modal-content">
+					<div class="container">
+						<div id="closeModalAutobid" class="close">&times;</div>
+						<div class="youtube-video-container">
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/rt04cZ4axLM"
+								frameborder="0"
+								allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal Autobid-->
+			
 			<!--AutoBid-->
 			<br />
 			<div>
@@ -958,7 +979,9 @@
 				<span class="title-part-time-project"
 					>Co-founder and Data Engineer</span
 				>
-				<span class="company-name"> / AUTOBID</span>
+				<span class="company-name">
+					/ <button id="allPrjAutobid" class="btn">AUTOBID</button></span
+				>
 				<span>, Hong Kong</span>
 			</div>
 
@@ -1226,8 +1249,8 @@
 		</div>
 
 		<script type="text/javascript">
-			// window.print();
+			//window.print();
 		</script>
 	</body>
-	<script src="controls.js"></script>
+	<script src="js/controls.js"></script>
 </html>
