@@ -318,4 +318,8 @@ table {
 		/* Force page breaks after each .page element of the document */
 		page-break-after: always;
 	}
+
+	.no-print {
+		display: none;
+	}
 }
