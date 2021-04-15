@@ -1,3 +1,4 @@
 .hidden-cv-url {
-	display: none;
+	/* Hide it with zero opacity instead of using display: none; */
+	opacity: 0;
 }
