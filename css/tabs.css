@@ -1,0 +1,34 @@
+body {
+	font-family: "Lato", sans-serif;
+}
+
+.tablink {
+	background-color: #90a4ae; /* Tab not selected */
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 50%; /* 100% / number of tabs */
+}
+
+.tablink:hover {
+	background-color: orange;
+}
+
+.tabcontent {
+	/* color: #555; */
+	display: none;
+	padding: 0;
+	text-align: center;
+}
+
+/* The bg color in the whole tab, it is same as the modal */
+#melcoAndroid {
+	background-color: white;
+}
+#melcoIos {
+	background-color: white;
+}

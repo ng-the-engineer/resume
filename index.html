@@ -20,6 +20,8 @@
 		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
 		<link rel="stylesheet" type="text/css" href="css/copy.css" />
 		<link rel="stylesheet" type="text/css" href="css/snackbar.css" />
+		<link rel="stylesheet" type="text/css" href="css/mobile-apps.css" />
+		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			rel="stylesheet"
@@ -231,11 +233,50 @@
 
 			<!--Melco-->
 			<br />
+
+			<!-- Modal CovidMelco-->
+			<div id="modalMelco" class="modal">
+				<div class="modal-content">
+					<div class="container">
+						<div id="closeModalMelco" class="close">&times;</div>
+
+						<div id="melcoAndroid" class="tabcontent">
+							<img src="images/melco_android.png" width="100%" />
+						</div>
+
+						<div id="melcoIos" class="tabcontent">
+							<img src="images/melco_ios.png" width="100%" />
+						</div>
+
+						<!-- Light green #4cd137 for selected tab button -->
+						<button
+							id="melcoDefault"
+							class="tablink"
+							onclick="openTab('melcoAndroid', this, '#4cd137')"
+						>
+							Android
+						</button>
+
+						<!-- Light green #4cd137 for selected tab button -->
+						<button
+							class="tablink"
+							onclick="openTab('melcoIos', this, '#4cd137')"
+						>
+							iOS
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal Melco-->
 			<div>
 				<span>DEC 2018 – AUG 2020 / </span>
 				<span class="title">Senior Software Engineer</span>
 				<span> / </span>
-				<span class="company-name">MELCO ENTERTAINMENT & RESORTS</span>
+				<span class="company-name"
+					><button id="jobMelco" class="btn">
+						MELCO ENTERTAINMENT & RESORTS
+					</button></span
+				>
 				<span>, Hong Kong</span>
 			</div>
 			<div>Dev & Ops for a loyalty mobile app. Managed a SCRUM team.</div>
@@ -1301,4 +1342,5 @@
 	<script src="js/print.js"></script>
 	<script src="js/copy.js"></script>
 	<script src="js/snackbar.js"></script>
+	<script src="js/tabs.js"></script>
 </html>
