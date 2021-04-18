@@ -3,7 +3,7 @@
 	border: none;
 	border-radius: 7px;
 	transition-duration: 0.1s;
-	font-weight: bold;
+	/* font-weight: bold; */
 	cursor: pointer;
 }
 

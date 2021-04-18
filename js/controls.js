@@ -1,34 +1,51 @@
+// Job WB
+wbHandler = (modal) => {
+  modal.style.display = "block";
+  document.getElementById("wbDefault").click();
+}
+const modalWB = document.getElementById("modalWB");
+document.getElementById("jobWB").onclick = () => wbHandler(modalWB);
+document.getElementById("jobWB_hist").onclick = () => wbHandler(modalWB);
+document.getElementById("closeModalWB").onclick = () => modalWB.style.display = "none";
+
 // Job Melco
-const modalMelco = document.getElementById("modalMelco");
-document.getElementById("jobMelco").onclick = () => {
+melcoHandler = (modal) => {
   modalMelco.style.display = "block";
   document.getElementById("melcoDefault").click();
 }
+const modalMelco = document.getElementById("modalMelco");
+document.getElementById("jobMelco").onclick = () => melcoHandler(modalMelco);
+document.getElementById("jobMelco_hist").onclick = () => melcoHandler(modalMelco);
 document.getElementById("closeModalMelco").onclick = () => modalMelco.style.display = "none";
 
 // SC
 const modalSC = document.getElementById("modalSC");
 document.getElementById("jobSC").onclick = () => modalSC.style.display = "block";
+document.getElementById("jobSC_hist").onclick = () => modalSC.style.display = "block";
 document.getElementById("closeModalSC").onclick = () => modalSC.style.display = "none";
 
 // Palo IT
 const modalPalo = document.getElementById("modalPalo");
 document.getElementById("jobPalo").onclick = () => modalPalo.style.display = "block";
+document.getElementById("jobPalo_hist").onclick = () => modalPalo.style.display = "block";
 document.getElementById("closeModalPalo").onclick = () => modalPalo.style.display = "none";
 
 // TG
 const modalTG = document.getElementById("modalTG");
 document.getElementById("jobTG").onclick = () => modalTG.style.display = "block";
+document.getElementById("jobTG_hist").onclick = () => modalTG.style.display = "block";
 document.getElementById("closeModalTG").onclick = () => modalTG.style.display = "none";
 
 // CovidClean
 const modalCovidClean = document.getElementById("modalCovidClean");
 document.getElementById("keyPrjCovidClean").onclick = () => modalCovidClean.style.display = "block";
+document.getElementById("covidClean_hist").onclick = () => modalCovidClean.style.display = "block";
 document.getElementById("closeModalCovidClean").onclick = () => modalCovidClean.style.display = "none";
   
 // Travie
 const modalTravie = document.getElementById("modalTravie");
 document.getElementById("keyPrjTravie").onclick = () => modalTravie.style.display = "block";
+document.getElementById("travie_hist").onclick = () => modalTravie.style.display = "block";
 document.getElementById("closeModalTravie").onclick = () => modalTravie.style.display = "none";
 
 // AutoBid
@@ -50,6 +67,8 @@ window.onclick = (event) => {
       modalTG.style.display = "none";
     case modalPalo:
       modalPalo.style.display = "none";
+    case modalWB:
+      modalWB.style.display = "none";
   }
 };
 

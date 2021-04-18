@@ -205,12 +205,47 @@
 			<h4>Professional Experience Highlights</h4>
 
 			<!--WonderBill-->
+
+			<!-- Modal WonderBill-->
+			<div id="modalWB" class="modal">
+				<div class="modal-content">
+					<div class="container">
+						<div id="closeModalWB" class="close">&times;</div>
+
+						<div id="wbAndroid" class="tabcontent">
+							<img src="images/wb_android.png" width="100%" />
+						</div>
+
+						<div id="wbIos" class="tabcontent">
+							<img src="images/wb_ios.png" width="100%" />
+						</div>
+
+						<!-- Light green #4cd137 for selected tab button -->
+						<button
+							id="wbDefault"
+							class="tablink"
+							onclick="openTab('wbAndroid', this, '#4cd137')"
+						>
+							Android
+						</button>
+
+						<!-- Light green #4cd137 for selected tab button -->
+						<button class="tablink" onclick="openTab('wbIos', this, '#4cd137')">
+							iOS
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal WonderBill-->
+
 			<div>
 				<span>OCT 2020 – APR 2021 /</span>
 				<span class="title">Senior Back End Engineer</span>
 				<span>/ </span>
-				<span class="company-name">WONDERBILL</span>
-				<span>, England</span>
+				<span class="company-name"
+					><button id="jobWB" class="btn">WonderBill</button></span
+				>
+				<span>/ England</span>
 			</div>
 			<div>Dev & Ops the backend for a bills tracking mobile app.</div>
 			<div>
@@ -274,10 +309,10 @@
 				<span> / </span>
 				<span class="company-name"
 					><button id="jobMelco" class="btn">
-						MELCO ENTERTAINMENT & RESORTS
+						Melco Entertainment & Resorts
 					</button></span
 				>
-				<span>, Hong Kong</span>
+				<span>/ Hong Kong</span>
 			</div>
 			<div>Dev & Ops for a loyalty mobile app. Managed a SCRUM team.</div>
 			<div>
@@ -329,9 +364,9 @@
 				<span class="title">Product Engineer</span>
 				<span class="company-name">
 					/
-					<button id="jobSC" class="btn">STANDARD CHARTERED BANK</button></span
+					<button id="jobSC" class="btn">Standard Chartered Bank</button></span
 				>
-				<span>, Hong Kong & Singapore</span>
+				<span>/ Hong Kong & Singapore</span>
 			</div>
 			<div>
 				Developed a wealth advisory app that disrupt the private banking market
@@ -380,9 +415,9 @@
 				<span>JUN 2016 – OCT 2017 / </span>
 				<span class="title">Developer</span>
 				<span class="company-name"
-					><button id="jobPalo" class="btn">PALO IT</button></span
+					><button id="jobPalo" class="btn">Palo IT</button></span
 				>
-				<span>, Hong Kong</span>
+				<span>/ Hong Kong</span>
 			</div>
 			<div>
 				Dev & Ops for clients including an insurance company and digital media
@@ -432,9 +467,9 @@
 				<span>DEC 2013 – JUN 2016 / </span>
 				<span class="title">System Analyst / </span>
 				<span class="company-name"
-					><button id="jobTG" class="btn">TRAVEL GLOBAL</button></span
+					><button id="jobTG" class="btn">Travel Global</button></span
 				>
-				<span>, Hong Kong</span>
+				<span>/ Hong Kong</span>
 			</div>
 			<div>Dev & Ops a travel booking platform in the founding team.</div>
 			<div>
@@ -455,8 +490,8 @@
 			<div>
 				<span>JAN 2012 – AUG 2013 / </span>
 				<span class="title">Associate Architect / </span>
-				<span class="company-name">DMX TECHNOLOGIES</span>
-				<span>, China & Hong Kong</span>
+				<span class="company-name">DMX Technologies</span>
+				<span>/ China & Hong Kong</span>
 			</div>
 			<div>
 				R&D a recommendation engine for a TV box. Managed research team.
@@ -518,9 +553,9 @@
 				<span class="title-part-time-project">Creator</span>
 				<span class="company-name">
 					/
-					<button id="keyPrjCovidClean" class="btn">COVIDCLEAN</button>
+					<button id="keyPrjCovidClean" class="btn">CovidClean</button>
 				</span>
-				<span>, London</span>
+				<span>/ London</span>
 			</div>
 			<div>
 				CovidClean helps travelers to make a better option by accessing Covid-19
@@ -560,9 +595,9 @@
 					Co-founder and Machine Learning Engineer
 				</span>
 				<span class="company-name">
-					/ <button id="keyPrjTravie" class="btn">TRAVIE APP</button></span
+					/ <button id="keyPrjTravie" class="btn">Travie App</button></span
 				>
-				<span>, HONG KONG</span>
+				<span>/ HONG KONG</span>
 			</div>
 			<div>
 				To optimize the traveller’s itinerary on-the-fly by creating a
@@ -630,8 +665,10 @@
 				<span>OCT 2020 – APR 2021 /</span>
 				<span class="title">Senior Back End Engineer</span>
 				<span>/ </span>
-				<span class="company-name">WONDERBILL</span>
-				<span>, LONDON</span>
+				<span class="company-name"
+					><button id="jobWB_hist" class="btn">WonderBill</button></span
+				>
+				<span>/ London</span>
 			</div>
 			<div>
 				I am responsible to develop and maintain the mobile backend. Moreover, I
@@ -660,8 +697,12 @@
 				<span>DEC 2018 – AUG 2020 / </span>
 				<span class="title">Senior Software Engineer</span>
 				<span> / </span>
-				<span class="company-name">MELCO ENTERTAINMENT & RESORTS</span>
-				<span>HONG KONG</span>
+				<span class="company-name"
+					><button id="jobMelco_hist" class="btn">
+						Melco Entertainment & Resorts
+					</button></span
+				>
+				<span>Hong Kong</span>
 			</div>
 			<div>
 				I was primarily responsible for contributing and maintaining the source
@@ -692,7 +733,12 @@
 			<div>
 				<span>OCT 2017 – DEC 2018 / </span>
 				<span class="title">Product Engineer</span>
-				<span class="company-name"> / STANDARD CHARTERED BANK</span>
+				<span class="company-name">
+					/
+					<button id="jobSC_hist" class="btn">
+						Standard Chartered Bank
+					</button></span
+				>
 				<span>, Hong Kong & Singapore</span>
 			</div>
 			<div>
@@ -735,7 +781,9 @@
 			<div>
 				<span>JUN 2016 – OCT 2017 / </span>
 				<span class="title">Developer</span>
-				<span class="company-name">PALO IT</span>
+				<span class="company-name"
+					><button id="jobPalo_hist" class="btn">Palo IT</button></span
+				>
 				<span>, Hong Kong</span>
 			</div>
 			<div>
@@ -812,7 +860,9 @@
 			<div>
 				<span>DEC 2013 – JUN 2016 / </span>
 				<span class="title">System Analyst / </span>
-				<span class="company-name">TRAVEL GLOBAL</span>
+				<span class="company-name"
+					><button id="jobTG_hist" class="btn">Travel Global</button></span
+				>
 				<span>, Hong Kong</span>
 			</div>
 			<div>
@@ -1070,7 +1120,9 @@
 			<div>
 				<span>AUG 2020 – NOV 2020 / </span>
 				<span class="title-part-time-project">Creator</span>
-				<span class="company-name"> / COVIDCLEAN</span>
+				<span class="company-name">
+					/ <button id="covidClean_hist" class="btn">CovidClean</button></span
+				>
 				<span>, London</span>
 			</div>
 			<div>
@@ -1094,7 +1146,9 @@
 				<span class="title-part-time-project"
 					>Co-founder and Machine Learning Engineer</span
 				>
-				<span class="company-name"> / TRAVIE</span>
+				<span class="company-name">
+					/ <button id="travie_hist" class="btn">Travie App</button></span
+				>
 				<span>, Hong Kong</span>
 			</div>
 
