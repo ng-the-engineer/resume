@@ -13,13 +13,22 @@ This project uses CSS and Javascript. The A4 layout is based on ( Project HTML S
 ```
 .
 ├── css
+│   ├── copy.css
 │   ├── effect.css
-│   ├── effect.css
-│   └── sheets-of-paper.css
-├── files
-│   └── travie-pitchdeck.pdf
+│   ├── mobile-apps.css
+│   ├── sheets-of-paper.css
+│   ├── sidebar.css
+│   ├── tabs.css
+│   └── video.css
+├── files                    (media resources)
 ├── images
 │   └── covid_web.png
+├── js
+│   ├── copy.js
+│   ├── modal.js
+│   ├── print.js
+│   ├── snackbar.js
+│   └── tab.js
 ├── index.html
 ├── LICENSE
 └── README.md
