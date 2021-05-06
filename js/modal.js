@@ -69,6 +69,8 @@ window.onclick = (event) => {
       modalPalo.style.display = "none";
     case modalWB:
       modalWB.style.display = "none";
+    case modalSC:
+      modalSC.style.display = "none";
   }
 };
 
