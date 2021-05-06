@@ -20,6 +20,28 @@
 	background-color: #000;
 }
 
+.plot-button {
+	position: fixed;
+	top: 20%;
+	left: 50px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.plot-button a {
+	display: block;
+	text-align: center;
+	padding: 16px;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 20px;
+}
+
+.plot-button a:hover {
+	background-color: #000;
+}
+
 .facebook {
 	background: #3b5998;
 	color: white;
@@ -42,6 +64,11 @@
 
 .print {
 	background: #bb0000;
+	color: white;
+}
+
+.plotting {
+	background: #c4e538;
 	color: white;
 }
 

@@ -22,6 +22,7 @@
 		<link rel="stylesheet" type="text/css" href="css/snackbar.css" />
 		<link rel="stylesheet" type="text/css" href="css/mobile-apps.css" />
 		<link rel="stylesheet" type="text/css" href="css/tabs.css" />
+		<link rel="stylesheet" type="text/css" href="css/skills-plot.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			rel="stylesheet"
@@ -53,10 +54,10 @@
 				><i class="fa fa-home" aria-hidden="true"></i
 			></a> -->
 
-			<!-- Print and save as PDF -->
-			<!-- <a href="#" class="twitter"
-				><i class="fa fa-download" aria-hidden="true"></i
-			></a> -->
+			<!-- Skills plot -->
+			<a href="#" class="plotting" onclick="openNav()"
+				><i class="fa fa-braille"></i
+			></a>
 
 			<!-- Linkedin -->
 			<a
@@ -87,6 +88,13 @@
 
 		<!-- The actual snackbar -->
 		<div id="snackbar">Copied http://cv.anthony.ng to clipboard</div>
+
+		<div id="myNav" class="overlay">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<div id="skills_plot" class="plot-overlay"></div>
+		</div>
 
 		<div class="page" contenteditable="false">
 			<div class="grid-container container-column-2">
@@ -1476,4 +1484,7 @@
 	<script src="js/copy.js"></script>
 	<script src="js/snackbar.js"></script>
 	<script src="js/tabs.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="js/plot-overlay.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 </html>
