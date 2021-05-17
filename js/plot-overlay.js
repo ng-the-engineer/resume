@@ -47,7 +47,6 @@ d3.csv("https://node-csv-api-ng-the-engineer.cloud.okteto.net/data",
     .scaleOrdinal()
     .domain([
       "Javascript",
-      "Frontend",
       "Web development",
       "DevOps",
       "Java",
