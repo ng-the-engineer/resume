@@ -48,18 +48,15 @@
 		/>
 		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 	</head>
-	<body class="document">
+	<body class="document" onload="track('https:\/\/cv.anthony.ng', 'landing_page')">
 		<div class="icon-bar no-print">
-			<!-- Go to www.anthony.ng or anthony.ng (NOT READY YET)-->
-			<!-- <a href="#" class="facebook"
-				><i class="fa fa-home" aria-hidden="true"></i
-			></a> -->
+
 			<a href="https://anthony.ng" class="home">
 				<i class="fa fa-home"></i>
 			</a>
 
 			<!-- Skills plot -->
-			<a href="#" class="plotting" onclick="openNav()"
+			<a href="#" class="plotting" onclick="track('https:\/\/cv.anthony.ng', 'skills_plot'); openNav()"
 				><i class="fa fa-braille"></i
 			></a>
 
@@ -1522,4 +1519,5 @@
 	<script src="js/d3.min.js"></script>
 	<script src="js/plot-overlay.js"></script>
 	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	<script src="js/track.js"></script>
 </html>
