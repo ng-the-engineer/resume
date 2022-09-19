@@ -6,7 +6,7 @@ const width = 1000 - margin.left - margin.right;
 const height = 840 - margin.top - margin.bottom;
 const xLabelHeight = 50;
 
-d3.csv("https://node-csv-api-ng-the-engineer.cloud.okteto.net/data",
+d3.csv("https://api-vercel-umber.vercel.app/data",
 (data) => {
   // Add X axis
   var x = d3.scaleLinear().domain([2002, 2023]).range([0, width]);
