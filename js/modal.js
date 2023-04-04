@@ -1,3 +1,9 @@
+// Job GL
+const modalGL = document.getElementById("modalGL");
+document.getElementById("jobGL").onclick = () => modalGL.style.display = "block";
+document.getElementById("jobGL_hist").onclick = () => modalGL.style.display = "block";
+document.getElementById("closeModalGL").onclick = () => modalGL.style.display = "none";
+
 // Job WB
 wbHandler = (modal) => {
   modal.style.display = "block";
@@ -71,6 +77,8 @@ window.onclick = (event) => {
       modalWB.style.display = "none";
     case modalSC:
       modalSC.style.display = "none";
+    case modalGL:
+      modalGL.style.display = "none";
   }
 };
 
