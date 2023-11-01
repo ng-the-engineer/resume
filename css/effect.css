@@ -96,3 +96,10 @@
 	border-radius: 0px 0px 0px 0px;
 	transition-duration: 0.5s;
 }
+
+.training:hover {
+	background-color: greenyellow;
+	color: black;
+	border-radius: 0px 0px 0px 0px;
+	transition-duration: 0.5s;
+}
