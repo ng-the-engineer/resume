@@ -89,3 +89,10 @@
 	font-size: 16px;
 	padding: 16px 32px;
 }
+
+.certified:hover {
+	background-color: orange;
+	color: black;
+	border-radius: 0px 0px 0px 0px;
+	transition-duration: 0.5s;
+}
