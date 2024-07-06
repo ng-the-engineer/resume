@@ -15,7 +15,7 @@ d3.csv("https://api-vercel-umber.vercel.app/data", (data) => {
 		.call(d3.axisBottom(x));
 
 	// Add Y axis - Exp
-	const y = d3.scaleLinear().domain([0, 11]).range([height, 0]);
+	const y = d3.scaleLinear().domain([0, 12]).range([height, 0]);
 	svg.append("g").call(d3.axisLeft(y));
 
 	// Add a scale for bubble size
