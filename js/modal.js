@@ -100,6 +100,15 @@ document.getElementById("jobSainsbury_hist").onclick = () =>
 document.getElementById("closeModalSainsbury").onclick = () =>
 	(modalSainsbury.style.display = "none");
 
+// Client National Building Society
+const modalNBS = document.getElementById("modalNBS");
+document.getElementById("jobNBS").onclick = () =>
+	(modalNBS.style.display = "block");
+document.getElementById("jobNBS_hist").onclick = () =>
+	(modalNBS.style.display = "block");
+document.getElementById("closeModalNBS").onclick = () =>
+	(modalNBS.style.display = "none");
+
 window.onclick = (event) => {
 	switch (event.target) {
 		case modalCovidClean:
@@ -124,5 +133,7 @@ window.onclick = (event) => {
 			modalLRQA.style.display = "none";
 		case modalSainsbury:
 			modalSainsbury.style.display = "none";
+		case modalNBS:
+			modalNBS.style.display = "none";
 	}
 };
