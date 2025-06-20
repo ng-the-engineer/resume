@@ -167,6 +167,7 @@
 							></span>
 							<span class="contact-item">&nbsp;https://anthony.ng</span>
 						</li>
+						<!--
 						<li>
 							<span>
 								<ion-icon
@@ -176,13 +177,14 @@
 							></span>
 							<span class="contact-item">&nbsp;+44 7593795481</span>
 						</li>
+					-->
 					</ul>
 				</div>
 			</div>
 
 			<p class="one-line-summary">
-				“A sensor software engineer and architect who cares about quality, team,
-				and society.”
+				“A sensor software engineer and architect building quality products and
+				tools.”
 			</p>
 
 			<hr />
@@ -367,7 +369,7 @@
 			<br />
 			<div>
 				As the Lead Backend Developer to build and deliver AWS Connect solution
-				for Sainsbury's Bank.
+				for <button id="jobSainsbury" class="btn">Sainsbury's Bank</button>
 			</div>
 			<div>
 				Key skills:
@@ -406,6 +408,29 @@
 				</div>
 			</div>
 			<!-- End Modal GL-->
+
+			<!-- Modal Sainsbury-->
+			<div id="modalSainsbury" class="modal">
+				<div class="modal-content">
+					<div class="container">
+						<div id="closeModalSainsbury" class="close">&times;</div>
+						<img
+							src="images\sainsburys_web.png"
+							alt="Sainsbury's Bank"
+							class="image"
+							style="width: 100%"
+						/>
+						<div class="middle">
+							<div class="text">
+								<a href="https://www.sainsburysbank.co.uk" target="_blank"
+									>Visit Sainsbury's Bank</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Modal Sainsbury-->
 
 			<br />
 			<!--WonderBill-->
@@ -862,82 +887,118 @@
 				<span class="title">Delivery Consultant</span>
 				<span>/ </span>
 				<span class="company-name"
-					><button id="jobGL_hist" class="btn">GlobalLogic UK</button></span
+					><button id="jobGL_hist" class="btn">GlobalLogic UK</button
+					><span>(A Hitachi Group Company)</span></span
 				>
 				<span>/ London</span>
+				<div>
+					I worked at GlobalLogic to develop and deliver software projects for
+					clients, contributed in developers community and experimental projects
+					such as Big Data pipeline automation and Internal Developer Portal.
+				</div>
+				<div>
+					Key skills:
+					<span class="skill-tag">AWS</span>
+					<span class="skill-tag">GCP</span>
+					<span class="skill-tag">Python</span>
+					<span class="skill-tag">Typescript</span>
+					<span class="skill-tag">Vite</span>
+					<span class="skill-tag">Next JS</span>
+					<span class="skill-tag">Spotify Backstage</span>
+				</div>
 			</div>
 			<br />
+
 			<div>
-				<span>Client - </span>
-				<span class="company-name">Nationwide Building Society</span>
-				<span>/ </span>
-				<span class="title">Lead Frontend Developer</span>
-				<span>/ OCT 2022 – MAR 2023</span>
-			</div>
-			<div>
-				As the last phase of a three-year migration plan, the project inherited
-				acute technical and operational complexities from rapidly emerging call
-				centre technologies. Being the lead frontend developer, I was
-				responsible for developing new custom features to enable call centre
-				agents to reach customers using outbound mechanisms with a test-driven
-				approach to optimize the alignment from multiple development pipelines
-				among our own team, AWS, and two solution providers. I used React and
-				MobX to implement the UI/UX. Protocols such as WebSocket and the RESTful
-				API were integrated to realize voice communication and call functions in
-				the web application. To facilitate a smooth transition, I conducted a
-				series of technical trainings for the client's internal team to sustain
-				the product.
-			</div>
-			<div>
-				Key skills:
-				<span class="skill-tag">React JS</span>
-				<span class="skill-tag">MobX</span>
-				<span class="skill-tag">Websocket</span>
-				<span class="skill-tag">Typescript</span>
-				<span class="skill-tag">Jest</span>
-				<span class="skill-tag">AWS Connect</span>
-				<span class="skill-tag">Buildkite Pipeline</span>
-			</div>
-			<br />
-			<div>
-				<span>Client - </span>
-				<span class="company-name">Sainsbury's Bank</span>
-				<span>/ </span>
-				<span class="title">Lead Backend Developer</span>
-				<span>/ JAN 2022 – AUG 2022 </span>
-			</div>
-			<div>
-				After successfully migrating the infrastructure from on-prem proprietary
-				software packages to AWS, I joined the second phase to re-develop the
-				core phone banking features with serverless technologies to bring
-				availability and scalability to the magnitude of the internet load. It
-				was a challenging mission because the core banking APIs were rapidly
-				evolving during the course. As the lead backend developer, facing
-				substantial uncertainty, I maximized the integration among the call
-				centre workflow engine, phone banking code, and the core banking APIs
-				using proxies and mocks. On the other hand, I embraced pair-programming
-				and workshops between our own team, AWS, and the client's team to tackle
-				problems collaboratively. I developed the serverless backend with AWS
-				Lambda functions in Node.js and Typescript, test-driven by Jest. To
-				comply with the strict banking regulations, I embedded encryption with
-				data in transit and at rest. This project received high recognition from
-				Sainsbury's Bank and GlobalLogic. It helped the client lay the technical
-				foundation to open up opportunities to adapt to modern technologies and
-				effectively reduce time-to-market and technical frictions.
-			</div>
-			<div>
-				Key skills:
-				<span class="skill-tag">Typescript</span>
-				<span class="skill-tag">Jest</span>
-				<span class="skill-tag">Lambda</span>
-				<span class="skill-tag">DynamoDB</span>
-				<span class="skill-tag">Serverless</span>
-				<span class="skill-tag">AWS Connect</span>
-				<span class="skill-tag">BitBucket Pipeline</span>
-				<span class="skill-tag">CloudFormation</span>
-				<span class="skill-tag">API Gateway</span>
-				<span class="skill-tag">AWS STS</span>
-				<span class="skill-tag">Asymmetric encryption</span>
+				<div class="grid-container container-column-2">
+					<div class="grid-item">
+						<div class="project-column">
+							<div>
+								<span>Client - </span>
+								<span class="company-name"> Nationwide Building Society </span>
+								<span>/ </span>
+								<span class="title">Lead Frontend Developer</span>
+								<span>/ OCT 2022 – MAR 2023</span>
+								<div>
+									As the last phase of a three-year migration plan, the project
+									inherited acute technical and operational complexities from
+									rapidly emerging call centre technologies. Being the lead
+									frontend developer, I was responsible for developing new
+									custom features to enable call centre agents to reach
+									customers using outbound mechanisms with a test-driven
+									approach to optimize the alignment from multiple development
+									pipelines among our own team, AWS, and two solution providers.
+									I used React and MobX to implement the UI/UX. Protocols such
+									as WebSocket and the RESTful API were integrated to realize
+									voice communication and call functions in the web application.
+									To facilitate a smooth transition, I conducted a series of
+									technical trainings for the client's internal team to sustain
+									the product.
+								</div>
+							</div>
+						</div>
+						<div>
+							Key skills:
+							<span class="skill-tag">React JS</span>
+							<span class="skill-tag">MobX</span>
+							<span class="skill-tag">Websocket</span>
+							<span class="skill-tag">Typescript</span>
+							<span class="skill-tag">Jest</span>
+							<span class="skill-tag">AWS Connect</span>
+							<span class="skill-tag">Buildkite Pipeline</span>
+						</div>
+					</div>
+					<div class="grid-item">
+						<div class="project-column">
+							<span>Client - </span>
+							<span class="company-name"
+								><button id="jobSainsbury_hist" class="btn">
+									Sainsbury's Bank
+								</button></span
+							>
+							<span>/ </span>
+							<span class="title">Lead Backend Developer</span>
+							<span>/ JAN 2022 – AUG 2022 </span>
+							<div>
+								After successfully migrating the infrastructure from on-prem
+								proprietary software packages to AWS, I joined the second phase
+								to re-develop the core phone banking features with serverless
+								technologies to bring availability and scalability to the
+								magnitude of the internet load. It was a challenging mission
+								because the core banking APIs were rapidly evolving in parallel
+								by the client's internal teams. As the lead backend developer,
+								facing substantial uncertainty, I maximized the integration
+								among the call centre workflow engine, phone banking code, and
+								the core banking APIs using proxies and mocks. On the other
+								hand, I embraced pair-programming and workshops between our own
+								team, AWS, and the client's team to tackle problems
+								collaboratively. I developed the serverless backend with AWS
+								Lambda functions in Node.js and Typescript, test-driven by Jest.
+								To comply with the strict banking regulations, I embedded
+								encryption with data in transit and at rest. This project
+								received high recognition from Sainsbury's Bank and GlobalLogic.
+								It helped the client lay the technical foundation to open up
+								opportunities to adapt to modern technologies and effectively
+								reduce time-to-market and technical frictions.
+							</div>
+						</div>
+
+						<div>
+							Key skills:
+							<span class="skill-tag">Typescript</span>
+							<span class="skill-tag">Jest</span>
+							<span class="skill-tag">Lambda</span>
+							<span class="skill-tag">DynamoDB</span>
+							<span class="skill-tag">Serverless</span>
+							<span class="skill-tag">AWS Connect</span>
+							<span class="skill-tag">BitBucket Pipeline</span>
+							<span class="skill-tag">CloudFormation</span>
+							<span class="skill-tag">API Gateway</span>
+							<span class="skill-tag">AWS STS</span>
+							<span class="skill-tag">Asymmetric encryption</span>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<!--WonderBill-->
@@ -1058,7 +1119,9 @@
 				<span class="skill-tag">Docker</span>
 				<span class="skill-tag">Openshift</span>
 			</div>
+		</div>
 
+		<div class="page" contenteditable="false">
 			<!--Palo IT-->
 			<br />
 			<div>
@@ -1137,9 +1200,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="page" contenteditable="false">
 			<!--Travel Global-->
 			<br />
 			<div>

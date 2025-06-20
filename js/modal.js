@@ -91,6 +91,15 @@ document.getElementById("allPrjAutobid").onclick = () =>
 document.getElementById("closeModalAutobid").onclick = () =>
 	(modalAutobid.style.display = "none");
 
+// Client Sainsbury
+const modalSainsbury = document.getElementById("modalSainsbury");
+document.getElementById("jobSainsbury").onclick = () =>
+	(modalSainsbury.style.display = "block");
+document.getElementById("jobSainsbury_hist").onclick = () =>
+	(modalSainsbury.style.display = "block");
+document.getElementById("closeModalSainsbury").onclick = () =>
+	(modalSainsbury.style.display = "none");
+
 window.onclick = (event) => {
 	switch (event.target) {
 		case modalCovidClean:
@@ -113,5 +122,7 @@ window.onclick = (event) => {
 			modalGL.style.display = "none";
 		case modalLRQA:
 			modalLRQA.style.display = "none";
+		case modalSainsbury:
+			modalSainsbury.style.display = "none";
 	}
 };
